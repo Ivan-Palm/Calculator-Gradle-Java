@@ -1,0 +1,36 @@
+plugins {
+	id 'java'
+    id 'eclipse'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+sourceSets {
+	main.java.srcDirs = ['src/logic/java']
+	main.resources.srcDirs = ['src/logic/resources']
+}
+    
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'io.github.bonigarcia:webdrivermanager:4.4.3'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+}
+
+application {
+	mainClass = 'com.example.App'
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+test {
+    useJUnitPlatform()
+}
