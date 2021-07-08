@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="139.0" spacing="5.0">
+               <children>
+                  <VBox prefHeight="51.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="lblOperation" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" startX="-100.0" stroke="WHITE" />
+                        <Label fx:id="lblResult" maxHeight="138.0" minHeight="30.0" prefHeight="31.0" prefWidth="193.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <effect>
+                              <SepiaTone />
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <GridPane fx:id="gpButtons" alignment="CENTER" hgap="1.0" vgap="1.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" />
+                  <RowConstraints minHeight="10.0" valignment="CENTER" />
+                  <RowConstraints minHeight="10.0" valignment="CENTER" />
+                  <RowConstraints minHeight="10.0" valignment="CENTER" />
+                  <RowConstraints minHeight="10.0" valignment="CENTER" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="btn7" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick7" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="7" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn8" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick8" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn9" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick9" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnAdd" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickAdd" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn4" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick4" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="4" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn5" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick5" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn6" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick6" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnSub" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickSub" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn1" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick1" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn2" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick2" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn3" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick3" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnMul" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickMul" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="x" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btn0" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClick0" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnDot" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickDot" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="." GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnDiv" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickDiv" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="/" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnEqn" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickEqn" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnClear" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickClear" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="CE" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnClearOne" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickClearOne" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="C" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnLogNatural" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickLogNatural" style="-fx-background-color: #ffffff; fx-background-radius: 5px;" text="ln" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Agency FB" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="btnLogTen" minHeight="30.0" minWidth="50.0" mnemonicParsing="false" onAction="#onClickLogTen" style="-fx-background-color: #ffffff; -fx-background-radius: 5px;" text="log_10">
+                     <font>
+                        <Font name="Agency FB" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="1.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <effect>
+                  <SepiaTone level="0.11" />
+               </effect>
+            </GridPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <Label fx:id="lblError" textFill="RED" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
